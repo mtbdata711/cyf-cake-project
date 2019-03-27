@@ -1,0 +1,229 @@
+/* Global */
+
+body {
+  background: #f2f2f2;
+}
+.wrapper {
+  width: 70%;
+  border: 4px dashed #1e012e;
+  background: #f2f2f2;
+  margin-left: 15%;
+}
+
+/* utility */
+
+.primary-paragraph {
+  font-style: italic;
+  font-size: 0.875em;
+  text-align: center;
+}
+.section-break {
+  display: flex;
+  flex-direction: row;
+  border: 4px dashed #1e012e;
+}
+.center {
+  margin: auto;
+  display: block;
+}
+.primary-button {
+  background-color: #000;
+  border: 2px dotted #fff;
+  color: #fff;
+  width: 50%;
+  margin-bottom: 1em;
+}
+.navigation-ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #d2ccd5;
+  margin: 0;
+  padding: 0;
+}
+.navigation-li {
+  display: block;
+  list-style-type: none;
+  width: 15%;
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  text-align: center;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #1e012e;
+}
+.image-container {
+  justify-content: center;
+  padding: 0.5em;
+}
+/* header & nav bar */
+
+header {
+  display: flex;
+  border: 5px solid #d2ccd5;
+  margin: auto auto 1em;
+  padding: 1em;
+}
+.logo-container {
+  flex: 1;
+  align-self: flex-start;
+}
+.logo-icon {
+  width: 100px;
+  height: 100px;
+}
+.contact-container {
+  justify-content: flex-end;
+  align-self: flex-end;
+  border: 3px dashed #1e012e;
+  font-family: "Allan";
+  font-size: 100%;
+}
+.nav-bar {
+  display: flex;
+  background-color: #d2ccd5;
+  margin-bottom: 1em;
+  padding: 0.2em;
+}
+/* Main section, information and image carousel */
+
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 0.6em;
+  word-break: break-all;
+}
+.main-heading {
+  font-family: "Allan";
+  font-size: 1.5em;
+  color: #1e012e;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d2ccd5;
+  border: 0.1em solid #000;
+}
+.image-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d2ccd5;
+  border: 0.1em solid #000;
+}
+.info-image {
+  width: 50%;
+  border: 5px dotted #fff;
+  border-radius: 50%;
+}
+.primary-image {
+  width: 100%;
+  height: 100%;
+  border: 0.1em solid #000;
+}
+.secondary-image-container {
+  display: flex;
+  padding-bottom: 0.3em;
+  width: 100%;
+}
+.secondary-image-container > div {
+  width: 15%;
+  border: 0.1em solid #000;
+  margin: 0 auto;
+  padding: 0.3em;
+}
+.secondary-image-container > div > img {
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .main-section {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 720px) {
+  .image-carousel.mobile-6-col,
+  .information.mobile-6-col {
+    width: 100%;
+    margin-bottom: 0.625em;
+  }
+  .main-section {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 720px) {
+  .secondary-image-container > div {
+    display: none;
+  }
+  .secondary-image-container > div:first-child {
+    width: 50%;
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+/* featured cakes // cards section */
+
+.featured-cakes {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 0.2em;
+  word-wrap: break-word;
+}
+.single-cake {
+  background: #d2ccd5;
+  border: 0.1em solid #000;
+  margin-top: 1em;
+}
+@media only screen and (min-width: 520px) and (max-width: 720px) {
+  .featured-cakes {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .featured-cakes {
+    flex-direction: column;
+  }
+}
+.cake-image {
+  width: 100%;
+  border: 0.1em solid #000;
+}
+/* responsive utility classes */
+
+@media only screen and (max-width: 500px) {
+  .mobile-12-col {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 720px) {
+  .mobile-6-col {
+    width: 45%;
+  }
+  .wrapper {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+@media only screen and (min-width: 721px) {
+  .desktop-4-col {
+    width: 33.33%;
+  }
+  .desktop-8-col {
+    width: 62%;
+  }
+  .desktop-3-col {
+    width: 24%;
+  }
+}
