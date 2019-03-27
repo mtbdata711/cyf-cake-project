@@ -1,3 +1,5 @@
+# cyf-cake-project
+
 Prototype cake business website to learn CSS Flexbox
 
 To-do list +
@@ -9,4 +11,4 @@ To-do list +
 Made as homework for Code Your Future!
 Find a codepen of this @ https://codepen.io/mtbdata711/pen/qvJxGa
  
-# cyf-cake-project
+
