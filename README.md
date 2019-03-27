@@ -11,7 +11,8 @@ To-do list +
 
 Made as homework for Code Your Future!
 
-Find a pen of this @ https://codepen.io/mtbdata711/pen/qvJxGa
+Find a pen of this @ https://codepen.io/mtbdata711/pen/qvJxGa <br/>
+
 View on Github @ https://mtbdata711.github.io/cyf-cake-project/
  
 
