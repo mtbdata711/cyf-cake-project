@@ -9,12 +9,10 @@ function imageCarouselEvent() {
 
 function swapFeaturedImage(selectedElement) {
   var featuredImage = document.querySelector(".primary-image");
-  if (selectedElement.src) {
-    var newFeaturedImage = selectedElement.src;
-    //Move current primary-image to secondary-image
-    selectedElement.src = featuredImage.src;
-    //Move new primary-image to primary-image div
-    featuredImage.src = newFeaturedImage;
-  }
+  var newFeaturedImage = selectedElement.src;
+  //Move current primary-image to secondary-image
+  selectedElement.src = featuredImage.src;
+  //Move new primary-image to primary-image div
+  featuredImage.src = newFeaturedImage;
 }
 imageCarouselEvent();
