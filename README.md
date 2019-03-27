@@ -10,6 +10,8 @@ To-do list +
 - Sort out nav-bar list items breaking out of containers on smaller screens
 
 Made as homework for Code Your Future!
-Find a codepen of this @ https://codepen.io/mtbdata711/pen/qvJxGa
+
+Find a pen of this @ https://codepen.io/mtbdata711/pen/qvJxGa
+View on Github @ https://mtbdata711.github.io/cyf-cake-project/
  
 
