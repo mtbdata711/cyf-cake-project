@@ -8,6 +8,7 @@ To-do list +
 - Add more text content
 - Make nicer buttons
 - Sort out nav-bar list items breaking out of containers on smaller screens
+- Make js variables clearer
 
 Made as homework for Code Your Future!
 
